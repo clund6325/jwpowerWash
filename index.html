@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    html{
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      background-image: url('images/background3.jpg');
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			color: black;
+			margin: 0;
+			padding: 0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    
+    header {
+      /* background-image: url('images/background3.jpg');
+      background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat; */
+      /* background-color: lightgray; */
+			color: black;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+      width: 98%;
+			padding: 10px 20px;
+      position: fixed;
+    }
+
+    .logo {
+			display: block;
+			height: 50px;
+			width: auto;
+		}
+
+    .container {
+			display: flex;
+      flex-direction: row;
+      /* justify-content: center; */
+			/* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+			grid-gap: 20px;
+			margin: 20px;
+      padding-left: 80px;
+		}
+
+		.card {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			/* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+			/* padding: 20px; */
+			/* transition: box-shadow 0.3s ease-in-out; */
+		}
+
+		/* .card img {
+			width: 100%;
+			height: auto;
+			margin-bottom: 10px;
+		} */
+
+		.card h2 {
+			font-size: 24px;
+			margin: 0;
+			margin-bottom: 10px;
+		}
+
+		.card p {
+			margin: 0;
+		}
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    
+    nav ul li {
+      margin: 0 10px;
+    }
+    
+    nav ul li a {
+      color: black;
+      scroll-behavior: smooth;
+      text-decoration: none;
+    }
+    
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 50px;
+    }
+    
+    section {
+      margin-left: 100px;
+      margin-right: 100px;
+      margin-bottom: 50px;
+    }
+    
+    h1, h2 {
+      font-size: 3em;
+      
+    }
+
+    ul {
+      display: flex;
+      justify-content: center; /* optional: center the list items horizontally */
+      /* list-style-type: none; remove bullet points */
+      padding: 0; /* remove default padding */
+    }
+
+    li {
+      margin: 0 10px; /* add some spacing between the list items */
+    }
+  </style>
+
+<head>
+	<title>JW Power Wash+</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<header>
+    <a href="#top">
+      <img src="images/Logo_Name.png" alt="Company Logo" class="logo">
+    </a>
+		<nav>
+			<ul>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#about">About Us</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+    <section id="#top">
+      <h1>Welcome to JW Power Wash +</h1>
+      <h3>Get your surfaces cleaned and looking brand new!</h3>
+      <img style="height: 500px; width: 800px;" src="images/cleanBuilding.jpg" alt="Clean Building">
+    </section>
+    <a href="#services">Learn more about our services</a>
+    <section id="services">
+      <h2>Our Services</h2>
+      <h3 style="text-decoration: underline;">Power Washing</h3>
+      <ul> 
+        <li>Concrete Cleaning</li>
+        <li>Graffiti Removal</li>
+        <li>Dumpster Pads</li>
+      </ul>
+      <div class="container">
+        <div class="card">
+          <img style="height: 200px; width: 300px;" src="images/manWashing.jpg" alt="Man Washing">
+        </div>
+        <div class="card">
+          <img style="height: 200px; width: 300px;" src="images/cleanBoots.jpg" alt="Clean Boots">
+        </div>
+        <div class="card">
+          <img style="height: 200px; width: 300px;" src="images/coolVacuum.jpg" alt="Power Wash Vacuum">
+        </div>
+      </div>
+      <br/>
+      <h3 style="text-decoration: underline;">Parking Lot Striping</h3>
+      <ul>
+        <li>Parking Stalls</li>
+        <li>Curbing</li>
+        <li>Arrows</li>
+      </ul>
+      <div class="container">
+        <div class="card">
+          <img style="height: 200px; width: 300px;" src="images/yellowLineStripe.jpg" alt="Clean Yellow Stripes">
+        </div>
+        <div class="card">
+          <img style="height: 200px; width: 300px;" src="images/handicapStripe.jpg" alt="Handicap and Curbing">
+        </div>
+        <div class="card">
+          <img style="height: 200px; width: 300px;" src="images/parkingLot.jpg" alt="Clean Lines and Arrrows">
+        </div>
+      </div>
+        <br/>
+      <h3>And More!</h3>
+      <a href="#contact">Contact us for a free estimate</a>
+    </section>
+    <section style="display: block; " id="about">
+      <h2>About Us</h2>
+      <p>We are a leading power washing and parking lot striping company, offering exceptional quality work to residential and commercial customers. With years of experience and a skilled team equipped with state-of-the-art equipment, we take pride in delivering outstanding results and exceeding our customers' expectations. Contact us today for a free estimate and see how we can transform your property.</p>
+      <a href="#contact">Contact us to learn more</a>
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <!-- <h3>Get in touch with us today for a cleaner tomorrow.</h3> -->
+      <!-- <h3>Let us help you with all your power washing needs.</h3> -->
+      <!-- <h3>We're here to answer any questions you have about our services.</h3> -->
+      <!-- <h3>Contact us to schedule a power washing appointment for your property.</h3> -->
+      <h3>Our team is ready to tackle your toughest power washing projects - contact us now</h3>
+      <!-- <h3>Don't wait - contact us today to learn how we can help make your property shine.</h3> -->
+      <!-- <h3>Experience the power of our washing - contact us for a free estimate.</h3> -->
+      <!-- <h3>We're just a phone call or email away - get in touch with us today.</h3> -->
+      <h4>Phone: (801) 857-8405</h4>
+      <h4>Email: jwpowerwashplus@gmail.com</h4>
+    </section>
+	</main>
+	<footer>
+		<p>&copy; JW Power Wash+ 2023</p>
+	</footer>
+</body>
+</html>
