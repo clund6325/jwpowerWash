@@ -7,6 +7,121 @@
 
     body {
       background-image: url('images/background3.jpg');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      color: black;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    
+    header {
+      color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 1px 2px;
+      position: static;
+      /* color: black;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 98%;
+      padding: 10px 20px;
+      position: relative; */
+    }
+
+    .logo {
+      display: block;
+      height: 50px;
+      width: auto;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 20px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    nav ul li {
+      margin: 0 10px;
+    }
+    
+    nav ul li a {
+      color: black;
+      scroll-behavior: smooth;
+      text-decoration: none;
+    }
+    
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 50px;
+    }
+    
+    section {
+      margin: 5px;
+      margin-bottom: 50px;
+    }
+    
+    h1, h2 {
+      font-size: 2em;
+    }
+
+    ul {
+      display: flex;
+      justify-content: center; 
+      flex-wrap: wrap;
+      padding: 0;
+    }
+
+    li {
+      margin: 0 10px; 
+    }
+
+    @media only screen and (min-width: 600px) {
+      .container {
+        flex-direction: row;
+      }
+
+      h1, h2 {
+        font-size: 3em;
+      }
+    }
+  </style>
+  <!-- <style>
+    html{
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-image: url('images/background3.jpg');
 			background-size: cover;
 			background-position: center center;
 			background-repeat: no-repeat;
@@ -98,7 +213,7 @@
     li {
       margin: 0 10px; /* add some spacing between the list items */
     }
-  </style>
+  </style> -->
 
 <head>
 	<title>JW Power Wash+</title>
@@ -122,7 +237,11 @@
     <section id="#top">
       <h1>Welcome to JW Power Wash +</h1>
       <h3>Get your surfaces cleaned and looking brand new!</h3>
-      <img style="height: 500px; width: 800px;" src="images/cleanBuilding.jpg" alt="Clean Building">
+      <div class="container">
+        <div class="card">
+          <img style="height: 300px; width: 400px;" src="images/manWashing.jpg" alt="Clean Building">
+        </div>
+      </div>
     </section>
     <a href="#services">Learn more about our services</a>
     <section id="services">
@@ -135,7 +254,7 @@
       </ul>
       <div class="container">
         <div class="card">
-          <img style="height: 200px; width: 300px;" src="images/manWashing.jpg" alt="Man Washing">
+          <img style="height: 200px; width: 300px;" src="images/cleanBuilding.jpg" alt="Man Washing">
         </div>
         <div class="card">
           <img style="height: 200px; width: 300px;" src="images/cleanBoots.jpg" alt="Clean Boots">
